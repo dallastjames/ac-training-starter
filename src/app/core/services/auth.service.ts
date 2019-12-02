@@ -33,7 +33,7 @@ export class AuthService extends IonicAuth {
             scope: 'openid offline_access email picture profile',
             audience: '',
             logoutUrl: `${host}logout`,
-            iosWebView: 'shared'
+            iosWebView: 'private'
         };
         super(auth0Config);
         this.identityService = identityService;
